@@ -114,6 +114,8 @@ class BaseChoice(RMLAttribute):
             value = value.lower()
         if value in self.choices:
             return self.choices[value]
+        elif len(value) == 1:
+            return value
         raise ValueError(
             '%r not a valid value for attribute "%s". %s' % (
             value, self.__name__, getFileInfo(self.context)))
