@@ -1406,6 +1406,12 @@ class IShowIndex(interfaces.IRMLDirectiveSignature):
         description=u'The table style that is applied to the index layout. ',
         required=False)
 
+    headers = attr.Boolean(
+        title='Headers',
+        description='True/False use or not headers in index',
+        default= False,
+        required=False)
+
 class ShowIndex(directive.RMLDirective):
     signature = IShowIndex
 
