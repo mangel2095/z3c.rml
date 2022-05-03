@@ -1407,8 +1407,8 @@ class IShowIndex(interfaces.IRMLDirectiveSignature):
         required=False)
 
     headers = attr.Boolean(
-        title='Headers',
-        description='True/False use or not headers in index',
+        title=u'Headers',
+        description=u'True/False use or not headers in index',
         default= False,
         required=False)
 
